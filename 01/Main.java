@@ -11,6 +11,7 @@ public class Main{
     int score = 0;
     int limit = 5;
     int lives = 3;
+    System.out.println("NUMBER GAME \n");
       //limiting the number of guess user has
       for(int i = lives; i > 0; i--){
         if(user != computer){
@@ -24,13 +25,13 @@ public class Main{
             System.out.println("User: "+user+" Computer: "+computer);
 
             if(user == computer){
-              System.out.println("Guess Correct✅");
+              System.out.println("Guess Correct");
               score +=10;
               lives += 1;
             }
             //game-over if user chances are over
             else if(i == 1){
-              System.out.println("You Lost this round😭");
+              System.out.println("You Lost this round");
               break;
             }
             else if(user > computer){
@@ -43,8 +44,10 @@ public class Main{
               score -=2;
               lives -= 1;
             }
+            System.out.println("------------------------------\n");
           }
       }
+      System.out.println("Score is: "+score+"\n");
 in.close();
   }
 }
