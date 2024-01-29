@@ -14,7 +14,7 @@ public class Main {
         double cs = in.nextDouble();
         System.out.println("DBMS: ");
         double dbms = in.nextDouble();
-
+        if(math<=100 && network<=100 && physics<=100 && cs<=100 && dbms<=100){
         double total_marks = math+network+physics+cs+dbms;
         double percentage = (total_marks)/5;
         if(total_marks<=500 && total_marks>=0){
@@ -46,6 +46,13 @@ public class Main {
         System.out.println("Physics: "+physics);
         System.out.println("CS: "+cs);
         System.out.println("DBMS: "+dbms);
+        }
+        else{
+            System.out.println("Invalid Marks...Try Again");
+        }
+        
+
+        
 in.close();
     }
 }
