@@ -40,7 +40,12 @@ public class Main {
         else{
             System.out.println("Invalid input of marks");
         }
-        
+        System.out.println("Scores:");
+        System.out.println("Maths: "+math);
+        System.out.println("Networks: "+network);
+        System.out.println("Physics: "+physics);
+        System.out.println("CS: "+cs);
+        System.out.println("DBMS: "+dbms);
 in.close();
     }
 }
